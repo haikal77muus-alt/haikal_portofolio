@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangtuah | Web Developer Portfolio</title>
+
+    <!-- Meta SEO sederhana -->
+    <meta name="description"
+        content="Portofolio Web Developer Haikal - Membangun aplikasi web modern, responsif, dan mudah digunakan.">
+    <meta name="author" content="Haikal">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons CDN (Untuk Ikon Media Sosial & Tools) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- File Style CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ======================================================= -->
+    <!-- NAVBAR (NAVIGASI ATAS)                                   -->
+    <!-- ======================================================= -->
+    <header class="navbar-header">
+        <nav class="navbar container" aria-label="Navigasi Utama">
+            <!-- Logo / Brand Name -->
+            <a href="#hero" class="nav-logo">
+                <span class="logo-badge">H</span> Hangtuah<span class="dot">.</span>
+            </a>
+
+            <!-- Menu Navigasi Desktop -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#hero" class="nav-link active">Beranda</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Tentang Saya</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Keahlian</a></li>
+                <li class="nav-item"><a href="#hobi" class="nav-link">Hobi & Kegiatan</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+
+            <!-- Tombol Aksi: Toggle Mode & Mobile Menu -->
+            <div class="nav-actions">
+                <!-- Tombol Ganti Tema (Dark / Light Mode) -->
+                <button id="themeToggle" class="btn-icon" aria-label="Ganti Tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Tombol Menu Mobile (Hamburger) -->
+                <button id="hamburgerBtn" class="btn-icon hamburger" aria-label="Buka Menu Mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ======================================================= -->
+        <!-- SECTION 1: HERO (SALAM UTAMA)                           -->
+        <!-- ======================================================= -->
+        <section id="hero" class="hero-section section">
+            <div class="container hero-grid">
+                <!-- Teks Pengenalan -->
+                <div class="hero-content">
+                    <div class="badge-greeting">
+                        <span class="pulse-dot"></span> Santri
+                    </div>
+                    <h1 class="hero-title">Halo, Saya <span class="text-gradient">Hangtuah</span> 👋</h1>
+                    <h2 class="hero-subtitle">Santri Al-Imam</h2>
+                    <p class="hero-description">
+                        Selamat datang di halaman perkenalan diri saya! Saya seorang Santri yang menyukai dunia
+                        teknologi, Tukang sound, olahraga, dan beragam kegiatan positif di sekolah.
+                    </p>
+
+                    <!-- Tombol Aksi (Call To Action) -->
+                    <div class="hero-buttons">
+                        <a href="#hobi" class="btn btn-primary">
+                            Lihat Hobi & Kegiatan <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            Hubungi Saya <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+
+                    <!-- Ringkasan Sosial Media Sederhana -->
+                    <div class="hero-socials">
+                        <span>Ikuti Saya:</span>
+                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Foto Profil / Avatar -->
+                <div class="hero-image-wrapper">
+                    <div class="image-card">
+                        <img src="assets/images/apalah.jpg" alt="Foto Profil Haikal" class="hero-avatar">
+                        <div class="floating-badge badge-code">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Sound Man</span>
+                        </div>
+                        <div class="floating-badge badge-exp">
+                            <i class="fa-solid fa-rocket"></i>
+                            <spakn>Teknik Listrik</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SECTION 2: TENTANG SAYA                                 -->
+        <!-- ======================================================= -->
+        <section id="about" class="about-section section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Mengenal Lebih Dekat</span>
+                    <h2 class="section-title">Tentang Saya</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3><i class="fa-solid fa-user"></i> Siapa Saya?</h3>
+                        <p>
+                            Saya adalah seorang santri di Pondok Tahfidz Modern Al-Imam yang berfokus menghafal
+                            Al-Qur'an sekaligus mendalami ilmu keagamaan. Kehidupan pesantren modern membentuk pribadi
+                            saya
+                            yang berpegang teguh pada nilai-nilai Islami, namun tetap
+                            terbuka dan adaptif terhadap perkembangan zaman.
+                        </p>
+                        <p>
+                            Di luar aktivitas rutin hafalan, saya memiliki ketertarikan besar pada dunia teknologi,
+                            seni, dan media digital.
+                            Saya aktif mendalami audio engineering dan seni hadroh untuk menghasilkan olah suara yang
+                            berkualitas, sekaligus
+                            menyalurkan hobi sebagai streamer dan mengeksplorasi inovasi teknologi terbaru demi
+                            menciptakan karya yang bermanfaat.
+                        </p>
+                    </div>
+
+                    <!-- Statistik Singkat -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-folder-open"></i></div>
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Project Selesai</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Semangat Belajar</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-heart"></i></div>
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Dukungan Responsif</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SECTION 3: KEAHLIAN (SKILLS)                            -->
+        <!-- ======================================================= -->
+        <section id="skills" class="skills-section section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Teknologi Yang Digunakan</span>
+                    <h2 class="section-title">Keahlian Saya</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Audio Engineering -->
+                    <div class="skill-card">
+                        <div class="skill-icon color-audio">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        <h3>Audio Engineering</h3>
+                        <p>Pengaturan mixer audio, equalizer, sound setup & mastering suara.</p>
+                    </div>
+
+                    <!-- Streamer YouTube, TikTok, Instagram, DLL -->
+                    <div class="skill-card">
+                        <div class="skill-icon color-stream">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <h3>Streamer YouTube, TikTok, Instagram, DLL</h3>
+                        <p>Live streaming, pembuatan konten video & interaksi multi-platform.</p>
+                    </div>
+
+                    <!-- Hadroh -->
+                    <div class="skill-card">
+                        <div class="skill-icon color-hadroh">
+                            <i class="fa-solid fa-drum"></i>
+                        </div>
+                        <h3>Hadroh</h3>
+                        <p>Penguasaan ritme pukulan rebana, keprak, bas & lantunan shalawat.</p>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="skill-card">
+                        <div class="skill-icon color-php">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <h3>PHP & XAMPP</h3>
+                        <p>Pemrosesan logika backend & server MySQL.</p>
+                    </div>
+
+                    <!-- Git & GitHub -->
+                    <div class="skill-card">
+                        <div class="skill-icon color-git">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
+                        <h3>Git & GitHub</h3>
+                        <p>Manajemen versi kode & kolaborasi tim.</p>
+                    </div>
+
+                    <!-- Responsive Design -->
+                    <div class="skill-card">
+                        <div class="skill-icon color-mobile">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3>Responsive Web</h3>
+                        <p>Tampilan optimal di HP, Tablet, & Desktop.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SECTION 4: HOBI & KEGIATAN SEKOLAH                      -->
+        <!-- ======================================================= -->
+        <section id="hobi" class="projects-section section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Kegiatan & Kegemaran</span>
+                    <h2 class="section-title">Hobi & Minat Saya</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <!-- Tombol Filter Hobi -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Semua Hobi</button>
+                    <button class="filter-btn" data-filter="tech">Coding & Tech</button>
+                    <button class="filter-btn" data-filter="olahraga">Olahraga</button>
+                    <button class="filter-btn" data-filter="gaming">E-Sports</button>
+                    <button class="filter-btn" data-filter="hadroh">Hadroh</button>
+                    <button class="filter-btn" data-filter="sound">Sound System</button>
+                    <button class="filter-btn" data-filter="ekskul">Ekskul</button>
+                </div>
+
+                <!-- Grid Kartu Hobi -->
+                <div class="projects-grid">
+                    <!-- Hobi 1: Coding -->
+                    <article class="project-card" data-category="tech">
+                        <div class="project-img-wrapper hobby-card-header bg-tech">
+                            <i class="fa-solid fa-code hobby-icon"></i>
+                            <span class="badge-category"><i class="fa-solid fa-laptop-code"></i> Tech</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag tag-clickable" data-tag="html-css"
+                                    title="Klik untuk lihat detail HTML & CSS"><i class="fa-brands fa-html5"></i> HTML &
+                                    CSS</span>
+                                <span class="tag tag-clickable" data-tag="javascript"
+                                    title="Klik untuk lihat detail JavaScript"><i class="fa-brands fa-js"></i>
+                                    JavaScript</span>
+                                <span class="tag tag-clickable" data-tag="web-dev"
+                                    title="Klik untuk lihat detail Web Dev"><i class="fa-solid fa-laptop-code"></i> Web
+                                    Dev</span>
+                            </div>
+                            <h3 class="project-title">Coding & Web Development</h3>
+                            <p class="project-desc">Suka mengulik HTML, CSS, dan JavaScript untuk membuat tampilan
+                                website interaktif serta eksperimen game sederhana di waktu luang.</p>
+                            <button class="btn-detail-trigger" data-hobby="tech">
+                                Lihat Detail Hobi <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Hobi 2: Olahraga -->
+                    <article class="project-card" data-category="olahraga">
+                        <div class="project-img-wrapper hobby-card-header bg-olahraga">
+                            <i class="fa-solid fa-table-tennis-paddle-ball hobby-icon"></i>
+                            <span class="badge-category"><i class="fa-solid fa-person-running"></i> Olahraga</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag tag-clickable" data-tag="bulu-tangkis"
+                                    title="Klik untuk lihat detail Bulu Tangkis"><i
+                                        class="fa-solid fa-table-tennis-paddle-ball"></i> Bulu Tangkis</span>
+                                <span class="tag tag-clickable" data-tag="futsal"
+                                    title="Klik untuk lihat detail Futsal"><i class="fa-solid fa-futbol"></i>
+                                    Futsal</span>
+                                <span class="tag tag-clickable" data-tag="kesehatan"
+                                    title="Klik untuk lihat detail Kesehatan"><i class="fa-solid fa-heart-pulse"></i>
+                                    Kesehatan</span>
+                            </div>
+                            <h3 class="project-title">Bulu Tangkis & Futsal</h3>
+                            <p class="project-desc">Rutin berolahraga bersama teman-teman sekolah saat akhir pekan untuk
+                                menjaga kesehatan tubuh dan menjalin keakraban.</p>
+                            <button class="btn-detail-trigger" data-hobby="olahraga">
+                                Lihat Detail Hobi <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Hobi 3: Gaming & E-Sports -->
+                    <article class="project-card" data-category="gaming">
+                        <div class="project-img-wrapper hobby-card-header bg-gaming">
+                            <i class="fa-solid fa-gamepad hobby-icon"></i>
+                            <span class="badge-category"><i class="fa-solid fa-headset"></i> E-Sports</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag tag-clickable" data-tag="game-strategi"
+                                    title="Klik untuk lihat detail Game Strategi"><i
+                                        class="fa-solid fa-chess-knight"></i> Game Strategi</span>
+                                <span class="tag tag-clickable" data-tag="kerjasama-tim"
+                                    title="Klik untuk lihat detail Kerjasama Tim"><i class="fa-solid fa-handshake"></i>
+                                    Kerjasama Tim</span>
+                                <span class="tag tag-clickable" data-tag="fokus"
+                                    title="Klik untuk lihat detail Fokus"><i class="fa-solid fa-bullseye"></i>
+                                    Fokus</span>
+                            </div>
+                            <h3 class="project-title">E-Sports & Game Strategi</h3>
+                            <p class="project-desc">Bermain game berbasis strategi untuk melatih kemampuan berpikir
+                                cepat, koordinasi komunikasi, dan penyusunan taktik tim.</p>
+                            <button class="btn-detail-trigger" data-hobby="gaming">
+                                Lihat Detail Hobi <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Hobi 4: Hadroh -->
+                    <article class="project-card" data-category="hadroh">
+                        <div class="project-img-wrapper hobby-card-header bg-hadroh">
+                            <i class="fa-solid fa-drum hobby-icon"></i>
+                            <span class="badge-category"><i class="fa-solid fa-drum"></i> Hadroh</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag tag-clickable" data-tag="sholawat"
+                                    title="Klik untuk lihat detail Sholawat"><i class="fa-solid fa-mosque"></i>
+                                    Sholawat</span>
+                                <span class="tag tag-clickable" data-tag="rebana"
+                                    title="Klik untuk lihat detail Rebana"><i class="fa-solid fa-drum"></i>
+                                    Rebana</span>
+                                <span class="tag tag-clickable" data-tag="kekompakan"
+                                    title="Klik untuk lihat detail Kekompakan"><i class="fa-solid fa-users-line"></i>
+                                    Kekompakan</span>
+                            </div>
+                            <h3 class="project-title">Seni Hadroh & Sholawat</h3>
+                            <p class="project-desc">Aktif dalam kegiatan seni musik islami (hadroh/rebana), melatih
+                                irama pukulan, tempo lagu, serta melantunkan sholawat bersama tim.</p>
+                            <button class="btn-detail-trigger" data-hobby="hadroh">
+                                Lihat Detail Hobi <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Hobi 5: Sound System -->
+                    <article class="project-card" data-category="sound">
+                        <div class="project-img-wrapper hobby-card-header bg-sound">
+                            <i class="fa-solid fa-sliders hobby-icon"></i>
+                            <span class="badge-category"><i class="fa-solid fa-sliders"></i> Sound System</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag tag-clickable" data-tag="audio-mixing"
+                                    title="Klik untuk lihat detail Audio & Mixer"><i class="fa-solid fa-sliders"></i>
+                                    Audio & Mixer</span>
+                                <span class="tag tag-clickable" data-tag="sound-man"
+                                    title="Klik untuk lihat detail Sound Man"><i class="fa-solid fa-headphones"></i>
+                                    Sound Man</span>
+                                <span class="tag tag-clickable" data-tag="akustik-suara"
+                                    title="Klik untuk lihat detail Kualitas Audio"><i
+                                        class="fa-solid fa-volume-high"></i>
+                                    Kualitas Audio</span>
+                            </div>
+                            <h3 class="project-title">Sound System & Audio Engineering</h3>
+                            <p class="project-desc">Memiliki ketertarikan tinggi pada tata suara (sound system), merakit
+                                equalizer, mixer audio, serta mengeset speaker agar menghasilkan suara yang jernih.</p>
+                            <button class="btn-detail-trigger" data-hobby="sound">
+                                Lihat Detail Hobi <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Hobi 6: Ekstrakurikuler -->
+                    <article class="project-card" data-category="ekskul">
+                        <div class="project-img-wrapper hobby-card-header bg-ekskul">
+                            <i class="fa-solid fa-users hobby-icon"></i>
+                            <span class="badge-category"><i class="fa-solid fa-school"></i> Ekskul</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag tag-clickable" data-tag="klub-komputer"
+                                    title="Klik untuk lihat detail Klub Komputer"><i class="fa-solid fa-desktop"></i>
+                                    Klub Komputer</span>
+                                <span class="tag tag-clickable" data-tag="osis" title="Klik untuk lihat detail OSIS"><i
+                                        class="fa-solid fa-id-card"></i> OSIS</span>
+                                <span class="tag tag-clickable" data-tag="soft-skills"
+                                    title="Klik untuk lihat detail Soft Skills"><i class="fa-solid fa-lightbulb"></i>
+                                    Soft Skills</span>
+                            </div>
+                            <h3 class="project-title">Ekstrakurikuler & Organisasi</h3>
+                            <p class="project-desc">Aktif dalam kegiatan ekstrakurikuler sekolah untuk menambah
+                                pengalaman leadership, public speaking, serta kerjasama antar siswa.</p>
+                            <button class="btn-detail-trigger" data-hobby="ekskul">
+                                Lihat Detail Hobi <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SECTION 5: KONTAK                                       -->
+        <!-- ======================================================= -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Mari Terhubung</span>
+                    <h2 class="section-title">Hubungi Saya</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info Kontak -->
+                    <div class="contact-info">
+                        <h3>Ada Pertanyaan atau Penawaran Project?</h3>
+                        <p>Saya selalu terbuka untuk berdiskusi mengenai ide baru, kerjasama pembuatan website, atau
+                            sekadar menyapa!</p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>haikal@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <p>+62 812 3456 7890</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Lokasi</h4>
+                                    <p>Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulir Kontak Sederhana -->
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan Anda</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Tuliskan pesan atau kebutuhan project Anda di sini..." required></textarea>
+                        </div>
+
+                        <!-- Notifikasi Status Kirim Pesan -->
+                        <div id="formStatus" class="form-status"></div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Kirim Pesan <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================================= -->
+    <!-- MODAL DETAIL HOBI UTAMA                                 -->
+    <!-- ======================================================= -->
+    <div id="hobbyModal" class="modal-backdrop" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-header-banner" id="modalBanner">
+                <div class="modal-icon-wrapper" id="modalIcon">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="modal-category-badge" id="modalCategory">Kategori</span>
+            </div>
+
+            <div class="modal-body">
+                <h2 class="modal-title" id="modalTitle">Judul Hobi</h2>
+                <h4 class="modal-subtitle" id="modalSubtitle">Subjudul Hobi</h4>
+                <p class="modal-description" id="modalDescription">Deskripsi lengkap tentang hobi.</p>
+
+                <div class="modal-section">
+                    <h5><i class="fa-solid fa-list-check"></i> Pengalaman & Hal Menarik:</h5>
+                    <ul class="modal-list" id="modalHighlights">
+                        <!-- Disi secara dinamis lewat JS -->
+                    </ul>
+                </div>
+
+                <div class="modal-meta-grid">
+                    <div class="modal-meta-card">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <div>
+                            <span>Frekuensi / Waktu</span>
+                            <strong id="modalSchedule">Setiap Akhir Pekan</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="modalCloseFooter">Tutup Detail <i
+                        class="fa-solid fa-check"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================= -->
+    <!-- MODAL DETAIL TAG / TOPIK SPESIFIK (TERPISAH)            -->
+    <!-- ======================================================= -->
+    <div id="tagModal" class="modal-backdrop" aria-hidden="true">
+        <div class="modal-container tag-modal-container">
+            <button class="modal-close-btn" id="tagModalCloseBtn" aria-label="Tutup Modal Tag">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="tag-modal-header" id="tagModalHeader">
+                <div class="tag-icon-circle" id="tagModalIcon">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="tag-modal-title-group">
+                    <span class="tag-badge-pill" id="tagModalBadge">Kategori Topik</span>
+                    <h3 id="tagModalTitle">Judul Tag</h3>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <p class="modal-description" id="tagModalDescription">Penjelasan tentang tag topik ini.</p>
+
+                <div class="tag-stats-list" id="tagModalStats">
+                    <!-- Disi lewat JS -->
+                </div>
+
+                <div class="tag-note-box">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p id="tagModalNotes">Catatan seputar topik ini.</p>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="tagModalCloseFooter">Tutup Penjelasan <i
+                        class="fa-solid fa-check"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================= -->
+    <!-- FOOTER (HAK CIPTA)                                      -->
+    <!-- ======================================================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 <strong>Haikal</strong>. Didukung oleh Having Great 2024/2027.</p>
+            <a href="#hero" class="back-to-top" aria-label="Kembali ke Atas">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- File JavaScript Utama -->
+    <script src="script.js"></script>
+</body>
+
+</html>
