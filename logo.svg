@@ -1,0 +1,22 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="gradH" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="shadowGlow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="rgba(79,70,229,0.35)"/>
+    </filter>
+  </defs>
+
+  <!-- Badge: rounded square, gradient background -->
+  <rect x="56" y="56" width="400" height="400" rx="88" ry="88"
+        fill="url(#gradH)" filter="url(#shadowGlow)"/>
+
+  <!-- Kaki kiri H -->
+  <rect x="138" y="148" width="78" height="216" rx="18" ry="18" fill="#ffffff"/>
+  <!-- Kaki kanan H -->
+  <rect x="296" y="148" width="78" height="216" rx="18" ry="18" fill="#ffffff"/>
+  <!-- Crossbar tengah H -->
+  <rect x="138" y="218" width="236" height="76" rx="18" ry="18" fill="#ffffff"/>
+</svg>
